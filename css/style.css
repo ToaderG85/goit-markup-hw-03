@@ -1,3 +1,4 @@
+/*Globals*/
 html {
     font-family: 'Roboto';
     font-style: normal;
@@ -6,27 +7,40 @@ html {
 
 .unstyled-list {
     list-style: none;
-   }
+}
+
+.link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+}
+
+*{margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px
+    }
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/*Header-Footer Section*/
+
 .header-section {
     display: flex;
-    width: 1170px;
     height: 80px;
-    margin: 0 auto;
     align-items: center;
-}
-
-.nav-list,
-.top-contact-list {
-    display: flex;
-    gap: 50px; ;
-}
-.nav-list {
-    margin-left: 90px;
-    flex-grow: 1;
-}
-
-.top-contact-list {
-    margin: 0 0 0 auto;
 }
 
 .logo-header, .logo-footer {
@@ -47,6 +61,58 @@ html {
     color: #212121;
 }
 
+.footer-section, 
+.hero-section {
+    background: #2F303A;
+}
+
+.footer-section{
+   height: 250px;
+}
+
+
+.logo-footer-second {
+    color: #FFFFFF
+}
+.adress-line {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    font-style: normal;
+    padding-top: 30px;
+}
+.adress-list {
+    height: 250px;
+}
+
+.contact-method {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    text-decoration: none;
+    cursor: pointer;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+.nav-list,
+.top-contact-list {
+    display: flex;
+    gap: 50px; ;
+}
+.nav-list {
+    margin-left: 90px;
+}
+
+.top-contact-list {
+    margin: 0 0 0 auto;
+}
+
 .link-nav {
     font-weight: 500;
     font-size: 14px;
@@ -65,20 +131,12 @@ html {
     color: #2196F3;
 }
 
-.link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    color: #757575;
-    text-decoration: none;
-}
+/*ProjectSection*/
 
 .project-category{
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding-top: 90px;
     padding-bottom: 50px
 }
 
@@ -108,10 +166,6 @@ html {
     border-radius: 4px;
 }
 
-.project-section {
-    width: 1170px;
-    margin: 0 auto;
-}
 .project-cards {
     display: flex;
     flex-wrap: wrap;
@@ -146,54 +200,7 @@ html {
     color: #757575;
 }
 
-.footer-section, 
-.hero-section {
-    background: #2F303A;
-}
-
-.footer-section{
-   height: 250px;
-}
-
-
-.logo-footer-second {
-    color: #FFFFFF
-}
-
-.adress-line {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    font-style: normal;
-    padding-top: 30px;
-}
-.adress-list {
-    width: 1170px;
-    margin: 0 auto;
-    height: 250px;
-}
-
-.contact-method {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    font-style: normal;
-    text-decoration: none;
-    cursor: pointer;
-    padding-bottom: 12px;
-    padding-top: 12px;
-}
-
-* {margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px
-}
+/*HeroSection*/
 .hero-section{
     height: 600px;
     display: flex;
@@ -233,10 +240,12 @@ html {
     cursor: pointer;
     margin: 0 auto;
 }
+
+/*OurValuesSection*/
+
 .our-values-section {
-    width: 1170px;
     display: flex;
-    margin: 0 auto;
+    padding-bottom: 0;
 }
 .value-list {
     display: flex;
@@ -248,7 +257,6 @@ html {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
-    padding-top: 90px;
     padding-bottom: 10px;
 }
 
@@ -258,14 +266,10 @@ html {
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: #757575;
-    padding-bottom: 90px;
 }
 
-.what-we-do-section,
-.our-team-section {
-    margin: 0 auto;
+/*WhatWeDo/OurTeam-Sections*/
 
-}
 .subtitle {
     font-size: 36px;
     line-height: 1.2;
@@ -281,9 +285,8 @@ html {
     justify-content: center
 }
 
-.our-team-section,
+.our-team-section h2,
 .what-we-do-section h2 {
-    padding-top: 90px;
     padding-bottom: 50px
 }
 .our-team-section {
