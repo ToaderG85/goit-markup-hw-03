@@ -211,6 +211,12 @@ html {
     align-items: center;
 }
 
+.hero-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
  .bussiness-object {
     font-weight: 900;
     font-size: 44px;
@@ -221,15 +227,11 @@ html {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin: 0 auto;
 }
 
 .request-service-button {
     font-size: 16px;
     line-height: 1.9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
@@ -239,9 +241,9 @@ html {
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    cursor: pointer;
-    margin: 30px auto;
     border-style: none;
+    cursor: pointer;
+    margin-top: 30px;
 }
 
 /*OurValuesSection*/
